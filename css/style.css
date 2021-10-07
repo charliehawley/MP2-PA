@@ -10,8 +10,8 @@ body {
     font-family: all-round-gothic, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #D8DBE2;
-    background-color: #2B2C28;
+    color: #d8dbe2;
+    background-color: #2b2c28;
 }
 
 
@@ -40,13 +40,14 @@ header>p {
     padding-top: 10px;
     text-align: center;
     width: 300px;
-    height: 380px;
+    height: 570px;
     background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
+    background-image: url(https://live.staticflickr.com/6218/6999853657_1dbf92c7da_b.jpg);
 }
 
 #user-port {
     margin: 2% auto;
-    background-color: #2B2C28;
+    background-color: #2b2c28;
     width: 90%;
     border: 1px #000 solid;
 }
@@ -71,20 +72,41 @@ input {
 #pal-console {
     margin: 10px auto 30px;
     width: 90%;
-    height: 50%;
+    height: 150px;
     background-color: #000;
     color: #fff;
     border: 1px #fff solid;
 }
 
+#pals-eye {
+    margin: 25px auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(#e94f37, #000);
+    border: 30px solid #666;
+    filter: drop-shadow(20px 20px #666,
+                        20px 20px #666);
+}
+
+#glint {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: radial-gradient(#fff, #e94f37);
+    left: 55%;
+    top: 640px;
+    z-index: 2;
+    box-shadow: 0px 0px 5px #fff;
+}
+
 
 /*------------Footer-------------*/
 footer {
-    position: relative;
     display: inline;
     bottom: 0px;
     margin: 30px 30% 0 30%;
-    clear: both;
 }
 
 #disclaimer {

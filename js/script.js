@@ -1,11 +1,13 @@
-var userActivity = document.getElementById('user-activity').value;
+var userInput = document.getElementById('user-input').value;
 
 function palRespond(event) {
     event.preventDefault();
-    let responseDialogue = palResponses[0];
+    var userActivity = userInput.elements['user-activity'].value;
+    console.log(userActivity)
+    /*let responseDialogue = palResponses[0];
     let response = document.getElementById('pal-response');
     console.log(response.value);
-    response = responseDialogue;
+    response = responseDialogue;*/
 }
 
 const palResponses = [
@@ -13,5 +15,5 @@ const palResponses = [
     `You seem very capable. You ${userActivity}.`,
     `You try to ${userActivity} but a sudden migraine keeps you in stasis.`];
 
-let userSubmit = document.getElementById('user-input');
+let userSubmit = document.getElementById('submit');
 userSubmit.addEventListener('submit', palRespond);
