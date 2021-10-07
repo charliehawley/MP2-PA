@@ -1,5 +1,5 @@
 # PAL
-PAL is for the disenfranchised and disempowered. PAL will make small life choices for you in the hope that the resources PAL provides will help you to empower yourself. Once PAL has made the decision for you he will provide you with a resource (selected at random) related to personal accountability/empowerment.
+PAL is for the disenfranchised and disempowered. PAL will make small life choices for you in the hope that the resources PAL provides will help you to empower yourself. Once PAL has made the decision for you he will provide you with a resource related to personal accountability/empowerment.
 
 I want PAL to represent nihilism so that PAL can embody and displace the user's nihilism and help them to focus on empowering themselves.
 
