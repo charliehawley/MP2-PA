@@ -47,7 +47,7 @@ header>p {
 #user-port {
     margin: 2% auto;
     background-color: #2B2C28;
-    width: 80%;
+    width: 90%;
     border: 1px #000 solid;
 }
 
@@ -75,4 +75,19 @@ input {
     background-color: #000;
     color: #fff;
     border: 1px #fff solid;
+}
+
+
+/*------------Footer-------------*/
+footer {
+    position: relative;
+    display: inline;
+    bottom: 0px;
+    margin: 30px 30% 0 30%;
+    clear: both;
+}
+
+#disclaimer {
+    margin: 20px;
+    text-align: center;
 }
