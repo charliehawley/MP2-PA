@@ -1,13 +1,15 @@
 function palRespond(event) {
     event.preventDefault();
-    let userInput = document.getElementById('user-activity').value;
+    let userInput = document.getElementById('user-activity').value.toLowerCase();
     console.log(userInput);
+
+    userInput = userInput.replace(/my/g, 'your')
 
     if (userInput === '') {
         var responseString = 'Do you really have no ambition? <br>Type something in.'
     } else {
         let randomResponseArr = [
-            `You seem capable. <br>I'm sure you can ${userInput} <br>😘.`,
+            `You seem capable. <br>I'm sure you can ${userInput}. <br>😘`,
             `I don't know man, <br>you get kinda tense <br>when you ${userInput}. <br>😬`,
             `Are you sure you even want <br>to ${userInput}? <br>🤨`,
             `You've got to dream bigger. <br>Anyone could ${userInput}. <br>🥱`,
