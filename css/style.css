@@ -40,7 +40,7 @@ header>p {
     padding-top: 10px;
     text-align: center;
     width: 300px;
-    height: 75%;
+    height: 380px;
     background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
 }
 
@@ -69,9 +69,9 @@ input {
 }
 
 #pal-console {
-    margin: 10px auto;
-    width: 60%;
-    height: 100px;
+    margin: 10px auto 30px;
+    width: 90%;
+    height: 50%;
     background-color: #000;
     color: #fff;
     border: 1px #fff solid;
