@@ -4,6 +4,7 @@ function palRespond(event) {
     console.log(userInput);
 
     userInput = userInput.replace(/my/g, 'your')
+    userInput = userInput.replace(/ing/g, '')
 
     if (userInput === '') {
         var responseString = 'Do you really have no ambition? <br>Type something in.'
@@ -12,7 +13,7 @@ function palRespond(event) {
             `You seem capable. <br>I'm sure you can ${userInput}. <br>😘`,
             `I don't know man, <br>you get kinda tense <br>when you ${userInput}. <br>😬`,
             `Are you sure you even want <br>to ${userInput}? <br>🤨`,
-            `You've got to dream bigger. <br>Anyone could ${userInput}. <br>🥱`,
+            `You've got to dream bigger. <br>Anyone can ${userInput}. <br>🥱`,
             `I know you have it within you <br>to ${userInput}. <br>👌`,
             `I believe in you. <br>Now go ${userInput}. <br>🙌`,
             `You're going to kill it today! <br>Nobody is more prepared <br>to ${userInput} than you.<br>👍`,
