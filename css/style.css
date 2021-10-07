@@ -43,13 +43,14 @@ header>p {
     height: 570px;
     background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
     background-image: url(https://live.staticflickr.com/6218/6999853657_1dbf92c7da_b.jpg);
+    border: 5px #fff outset;
 }
 
 #user-port {
     margin: 2% auto;
     background-color: #2b2c28;
     width: 90%;
-    border: 1px #000 solid;
+    border: 5px #fff inset;
 }
 
 #user-port>h2 {
@@ -60,6 +61,7 @@ header>p {
 
 #user-port>p {
     padding: 5px;
+    font-size: .9rem;
 }
 
 input {
@@ -75,7 +77,7 @@ input {
     height: 150px;
     background-color: #000;
     color: #fff;
-    border: 1px #fff solid;
+    border: 5px #fff inset;
 }
 
 #pals-eye {
@@ -84,7 +86,7 @@ input {
     height: 120px;
     border-radius: 50%;
     background: radial-gradient(#e94f37, #000);
-    border: 30px solid #666;
+    border: 30px #666 inset;
     filter: drop-shadow(20px 20px #666,
                         20px 20px #666);
 }
@@ -96,7 +98,7 @@ input {
     border-radius: 50%;
     background: radial-gradient(#fff, #e94f37);
     left: 55%;
-    top: 640px;
+    top: 660px;
     z-index: 2;
     box-shadow: 0px 0px 5px #fff;
 }
