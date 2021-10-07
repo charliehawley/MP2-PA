@@ -14,13 +14,65 @@ body {
     background-color: #2B2C28;
 }
 
-h1 {
+
+/*------------Header-------------*/
+header {
+    padding: 20px;
+    width: 90%;
+}
+
+header>h1 {
+    font-size: 2.3rem;
+    margin: 0;
     font-family: all-round-gothic, sans-serif;
     font-weight: 600;
     font-style: italic;
 }
 
-h2 {
+header>p {
+    font-size: .8rem;
+}
+
+
+/*------------Main-------------*/
+#border-div {
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    width: 300px;
+    height: 75%;
+    background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
+}
+
+#user-port {
+    margin: 2% auto;
+    background-color: #2B2C28;
+    width: 80%;
+    border: 1px #000 solid;
+}
+
+#user-port>h2 {
+    padding: 5px;
     font-family: all-round-gothic, sans-serif;
     font-style: italic;
+}
+
+#user-port>p {
+    padding: 5px;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+    background-color: #ddd;
+    width: 85%;
+}
+
+#pal-console {
+    margin: 10px auto;
+    width: 60%;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    border: 1px #fff solid;
 }
