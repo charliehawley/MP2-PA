@@ -1,14 +1,18 @@
+/*------------------PAL user response function-------------------*/ 
 function palRespond(event) {
     event.preventDefault();
     let userInput = document.getElementById('user-activity').value.toLowerCase();
     console.log(userInput);
 
+    /*--------Response syntax modifier--------*/
     userInput = userInput.replace(/my/g, 'your')
     userInput = userInput.replace(/ing/g, '')
 
+    /*---Empty submission response generator---*/
     if (userInput === '') {
         var responseString = 'Do you really have no ambition? <br>Type something in.'
     } else {
+        /*--------Random response array--------*/
         let randomResponseArr = [
             `You seem capable. <br>I'm sure you can ${userInput}. <br>😘`,
             `I don't know man, <br>you get kinda tense <br>when you ${userInput}. <br>😬`,
@@ -21,17 +25,15 @@ function palRespond(event) {
             `You want to ${userInput}? <br>You're going to miss <br>LOADS of great content <br>on instagram if you do that. <br>📱`,
             `Only true masters <br>can ${userInput}. <br>🧘‍♀️`,
         ]
-
+        /*--------Random index generator--------*/
         let x = Math.floor(Math.random() * 10);
         console.log(x)
         var responseString = randomResponseArr[x]
     }
-
+    /*------Assign response string to HTML------*/
     let palResponse = document.getElementById('pal-response');
     palResponse.innerHTML = responseString;
 }
-
-
-
+/*--------Event listener (submit)--------*/
 let userSubmit = document.getElementById('user-input');
 userSubmit.addEventListener('submit', palRespond);
