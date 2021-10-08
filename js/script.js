@@ -1,4 +1,4 @@
-/*------------------PAL user response function-------------------*/ 
+/*------------------Module 1 PAL user response function-------------------*/ 
 function palRespond(event) {
     event.preventDefault();
     let userInput = document.getElementById('user-activity').value.toLowerCase();
@@ -39,16 +39,28 @@ let userSubmit = document.getElementById('user-input');
 userSubmit.addEventListener('submit', palRespond);
 
 
-/*----------------Module 2 video reveal and play---------------*/
+/*----------------Module 2 PAL video reveal and play---------------*/
 /*-------------------Reveals video and plays-------------------*/ 
 function playWlex(event) {
-    console.log('clicked wl-ex')
-    var wlexVid = document.getElementById('wl-ex');
-    wlexVid.style.display = 'inline';
-    wlexVid.play();
-    wlexButton.style.boxShadow = '-3px -3px 3px #000';
-    let palC2Text = document.getElementById('vid-credit');
-    palC2Text.innerHTML = '<p>Waking Life - LINKLATER 2001</p>'
+    var currentValue = wlexButton.value;
+    if (currentValue === 'not-playing') {
+        console.log('clicked wl-ex');
+        wlexButton.value = 'playing';
+        let wlexVid = document.getElementById('wl-ex');
+        wlexVid.style.display = 'inline';
+        wlexVid.play();
+        wlexButton.style.boxShadow = '-3px -3px 3px #000';
+        let palC2Text = document.getElementById('vid-credit');
+        palC2Text.innerHTML = '<p>Waking Life, LINKLATER (2001)</p>';
+    } else {
+        wlexButton.value = 'not-playing';
+        let wlexVid = document.getElementById('wl-ex');
+        wlexVid.style.display = 'none';
+        wlexVid.pause();
+        wlexButton.style.boxShadow = '3px 3px 3px #000';
+        let palC2Text = document.getElementById('vid-credit');
+        palC2Text.innerHTML = '';
+    }
 }
 /*----------------Event listener for button click--------------*/ 
 var wlexButton = document.getElementById('exist');
