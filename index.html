@@ -13,20 +13,38 @@
         <p>Tired of life's incessant demand for your opinion?</p>
         <p>Try leaving it all up to PAL - your Personal Accountability Labourer</p>
     </header>
-    <main id="border-div">
-        <div id="user-port">
-            <h2>Hi I'm PAL</h2>
-            <p>What is it you're thinking of doing?</p>
-            <form id="user-input" action="#" method="POST">
-                <input id="user-activity" type="text" placeholder="I'm trying to...">
-                <input id="submit" type="submit">
-            </form>
+    <main>
+        <div id="console-1">
+            <div class="user-port">
+                <h2>Hi I'm PAL</h2>
+                <p>What is it you're thinking of doing?</p>
+                <form id="user-input" action="#" method="POST">
+                    <input id="user-activity" type="text" placeholder="I'm trying to...">
+                    <input id="submit" type="submit">
+                </form>
+            </div>
+            <div id="pal-console">
+                <p id="pal-response"></p>
+            </div>
+            <div id="pals-eye"></div>
+            <div id="glint"></div>
         </div>
-        <div id="pal-console">
-            <p id="pal-response"></p>
+        <div id="console-2">
+            <div class="user-port">
+                <p>Any mission worth completing requires human intervention.</p>
+                <p>Please select any circumstances below that are relevant so that I may prescribe you some thoughts from the best that humanity has to offer.</p>
+                <hr>
+                <p>What is it that bothers you about making decisions?</p>
+                <form id="prescription" action="#" method="POST">
+                    <label for="force">I try too hard</label>
+                    <input type="radio" name="force" id="force">
+                </form>
+            </div>
+            <div id="dr-pal-console">
+                <p id="pal-prescription-text"></p>
+            </div>
+            <div id="pal-prescription-speaker"></div>
         </div>
-        <div id="pals-eye"></div>
-        <div id="glint"></div>
     </main>
     <footer>
         <section id="disclaimer">
