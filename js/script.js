@@ -37,3 +37,17 @@ function palRespond(event) {
 /*--------Event listener (submit)--------*/
 let userSubmit = document.getElementById('user-input');
 userSubmit.addEventListener('submit', palRespond);
+
+
+/*----------------Module 2 video reveal and play---------------*/
+/*-------------------Reveals video and plays-------------------*/ 
+function playWlex(event) {
+    console.log('clicked wl-ex')
+    var wlexVid = document.getElementById('wl-ex');
+    wlexVid.style.display = 'inline';
+    wlexVid.play();
+    wlexButton.style.boxShadow = '-3px -3px 3px #000';
+}
+/*----------------Event listener for button click--------------*/ 
+var wlexButton = document.getElementById('exist');
+wlexButton.addEventListener('click', playWlex);
