@@ -40,7 +40,7 @@ userSubmit.addEventListener('submit', palRespond);
 
 
 /*----------------Module 2 PAL video reveal and play---------------*/
-/*-------------------Reveals video and plays-------------------*/ 
+/*-------------------Reveals 'exist' video and plays-------------------*/ 
 function playWlex(event) {
     var currentValue = wlexButton.value;
     if (currentValue === 'not-playing') {
@@ -59,9 +59,35 @@ function playWlex(event) {
         wlexVid.pause();
         wlexButton.style.boxShadow = '3px 3px 3px #000';
         let palC2Text = document.getElementById('vid-credit');
-        palC2Text.innerHTML = '';
+        palC2Text.innerHTML = 'Maybe this will help...';
     }
 }
-/*----------------Event listener for button click--------------*/ 
+/*----------------Event listener for 'exist' button click--------------*/ 
 var wlexButton = document.getElementById('exist');
 wlexButton.addEventListener('click', playWlex);
+
+/*-------------------Reveals 'luck' video and plays-------------------*/ 
+function playLuck(event) {
+    var currentValue = luckButton.value;
+    if (currentValue === 'not-playing') {
+        console.log('clicked luck');
+        luckButton.value = 'playing';
+        let luckVid = document.getElementById('luck');
+        luckVid.style.display = 'inline';
+        luckVid.play();
+        luckButton.style.boxShadow = '-3px -3px 3px #000';
+        let palC2Text = document.getElementById('vid-credit');
+        palC2Text.innerHTML = '<p>Luck, School of Life (2018)</p>';
+    } else {
+        luckButton.value = 'not-playing';
+        let luckVid = document.getElementById('luck');
+        luckVid.style.display = 'none';
+        luckVid.pause();
+        luckButton.style.boxShadow = '3px 3px 3px #000';
+        let palC2Text = document.getElementById('vid-credit');
+        palC2Text.innerHTML = 'Maybe this will help...';
+    }
+}
+/*----------------Event listener for 'exist' button click--------------*/ 
+var luckButton = document.getElementById('luck-sol');
+luckButton.addEventListener('click', playLuck);

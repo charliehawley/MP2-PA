@@ -147,6 +147,19 @@ hr {
 
 #exist {
     margin: 10px;
+    width: 230px;
+    display: inline-block;
+    background-color: #832e21;
+    color: #ffffcc;
+    padding: 10px 20px;
+    border: 8px solid #222;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px #000;
+}
+
+#luck-sol {
+    margin: 0 0 10px;
+    width: 230px;
     display: inline-block;
     background-color: #832e21;
     color: #ffffcc;
@@ -157,6 +170,12 @@ hr {
 }
 
 #wl-ex {
+    height: 148px;
+    padding-top: 1px;
+    display: none;
+}
+
+#luck {
     height: 148px;
     padding-top: 1px;
     display: none;
@@ -191,17 +210,6 @@ hr {
     box-shadow: 3px 3px 3px #000;
 }
 
-#onoff {
-    margin: 10px;
-    width: 220px;
-    display: inline-block;
-    background-color: #832e21;
-    color: #ffffcc;
-    padding: 10px 20px;
-    border: 8px solid #222;
-    border-radius: 3px;
-    box-shadow: 3px 3px 3px #000;
-}
 
 /*-----------------------------Footer-----------------------------*/
 footer {
