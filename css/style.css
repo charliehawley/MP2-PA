@@ -128,12 +128,21 @@ hr {
 }
 
 #dr-pal-console {
-    margin: 10px auto 30px;
+    margin: 10px auto 0;
     width: 90%;
     height: 150px;
     background-color: #000;
     color: #fff;
     border: 5px #fff inset;    
+}
+
+#vid-credit {
+    margin: 3px auto 30px;
+    width: 90%;
+    height: 20px;
+    background-color: #000;
+    color: #77fdd5;
+    border: 5px #fff inset;
 }
 
 #exist {

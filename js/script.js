@@ -47,6 +47,8 @@ function playWlex(event) {
     wlexVid.style.display = 'inline';
     wlexVid.play();
     wlexButton.style.boxShadow = '-3px -3px 3px #000';
+    let palC2Text = document.getElementById('vid-credit');
+    palC2Text.innerHTML = '<p>Waking Life - LINKLATER 2001</p>'
 }
 /*----------------Event listener for button click--------------*/ 
 var wlexButton = document.getElementById('exist');
