@@ -75,6 +75,7 @@ function playLuck(event) {
         let luckVid = document.getElementById('luck');
         luckVid.style.display = 'inline';
         luckVid.play();
+        luckVid.volume = 0.4;
         luckButton.style.boxShadow = '-3px -3px 3px #000';
         let palC2Text = document.getElementById('vid-credit');
         palC2Text.innerHTML = '<p>Luck, School of Life (2018)</p>';

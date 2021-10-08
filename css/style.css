@@ -110,6 +110,16 @@ header>p {
     box-shadow: 0px 0px 5px #fff;
 }
 
+/*---------Media query info----------*/
+#info {
+    margin-top: 10px;
+    display: none;
+    flex-wrap: wrap;
+    background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
+    background-image: url(https://live.staticflickr.com/6218/6999853657_1dbf92c7da_b.jpg);
+    border: 5px #fff outset;
+}
+
 /*------------Console 2-------------*/
 #console-2 {
     margin: auto;
@@ -170,7 +180,7 @@ hr {
 }
 
 #wl-ex {
-    height: 148px;
+    height: 147px;
     padding-top: 1px;
     display: none;
 }
@@ -223,4 +233,38 @@ footer {
 #disclaimer {
     margin: 2px;
     text-align: center;
+}
+
+
+/*--------------------------Media queries--------------------------*/
+@media screen and (min-width: 768px) {
+    header {
+        width: 73%
+    }
+
+    main {
+        display: flex;
+    }
+
+    #console-1 {
+        margin: 10px 5px auto 10%;
+    }
+
+    #wl-ex {
+        height: 144px;
+        padding-top: 2px;
+    }
+
+    #info {
+        display: inline;
+    }
+
+    #console-2 {
+        margin: 10px 10% auto 5px;
+    }
+
+    footer {
+        padding: 20px;
+        width: 73%;
+    }
 }
