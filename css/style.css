@@ -256,7 +256,7 @@ footer {
     }
 
     #info {
-        display: inline;
+        display: none;
     }
 
     #console-2 {
