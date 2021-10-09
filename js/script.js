@@ -21,7 +21,7 @@ function palRespond(event) {
             `I know you have it within you <br>to ${userInput}. <br>👌`,
             `I believe in you. <br>Now go ${userInput}. <br>🙌`,
             `You're going to kill it today! <br>Nobody is more prepared <br>to ${userInput} than you.<br>👍`,
-            `I'm sorry, <br>I can't let you ${userInput}. <br>⭕`,
+            `I'm sorry, <br>I can't let you <br>${userInput}. <br>⭕`,
             `You want to ${userInput}? <br>You're going to miss <br>LOADS of great content <br>on Instagram if you do that. <br>📱`,
             `Only true masters <br>can ${userInput}. <br>🧘‍♀️`,
         ];
