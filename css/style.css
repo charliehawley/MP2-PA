@@ -138,7 +138,7 @@ h2 {
     position: relative;
     top: 10px;
     right: 5px;
-    width: 300px;
+    width: 350px;
     height: 330px;
     display: none;
     background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
@@ -205,22 +205,25 @@ hr {
     border: 5px #fff inset;
 }
 
-#wl-ex {
+video {
     height: 147px;
-    padding-top: 1px;
+    padding-top: 2px;
+    padding-left: 2px;
     display: none;
+}
+
+#wl-ex {
+    padding-top: 1px;
+    padding-left: 1px;
 }
 
 #luck {
-    height: 148px;
-    padding-top: 1px;
-    display: none;
+    padding-left: 4px;
 }
 
 #intuition {
-    height: 148px;
     padding-top: 1px;
-    display: none;
+    padding-left: 4px;
 }
 
 #pal-prescription-speaker {
@@ -273,7 +276,7 @@ footer {
 /*------------------------------iPad-------------------------------*/
 @media screen and (min-width: 768px) {
     header {
-        width: 79%
+        width: 89%
     }
 
     main {
@@ -281,12 +284,8 @@ footer {
     }
 
     #console-1 {
-        margin: 10px 5px auto 10%;
-    }
-
-    #wl-ex {
-        height: 144px;
-        padding-top: 2px;
+        margin: 10px 5px auto 5%;
+        width: 350px;
     }
 
     #info {
@@ -294,26 +293,46 @@ footer {
     }
 
     #console-2 {
-        margin: 10px 10% auto 5px;
+        margin: 10px 5% auto 5px;
+        width: 350px;
+    }
+
+    video {
+        margin-left: 5px;
     }
 
     footer {
         padding: 20px;
-        width: 73%;
+        width: 84%;
     }
 }
 
 /*--------------------------iPad Pro------------------------------*/
 @media screen and (min-width: 1024px) {
     #console-1 {
-        width: 495px;
+        width: 450px;
+    }
+    
+    #info {
+        width: 450px;
     }
 
     #console-2 {
-        width: 495px;
+        width: auto;
     }
 
-    #info {
-        width: 495px;
+    #dr-pal-console {
+        height: 228px;
     }
+
+    video {
+        margin-top: 5px;
+        margin-left: 3px;
+        height: 215px;
+    }
+
+    #wl-ex {
+        margin-left: 2px;
+    }
+
 }
