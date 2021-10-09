@@ -179,6 +179,18 @@ hr {
     box-shadow: 3px 3px 3px #000;
 }
 
+#int-aw {
+    margin: 0 0 10px;
+    width: 230px;
+    display: inline-block;
+    background-color: #832e21;
+    color: #ffffcc;
+    padding: 10px 20px;
+    border: 8px solid #222;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px #000;
+}
+
 #wl-ex {
     height: 147px;
     padding-top: 1px;
@@ -186,6 +198,12 @@ hr {
 }
 
 #luck {
+    height: 148px;
+    padding-top: 1px;
+    display: none;
+}
+
+#intuition {
     height: 148px;
     padding-top: 1px;
     display: none;

@@ -89,6 +89,33 @@ function playLuck(event) {
         palC2Text.innerHTML = 'Maybe this will help...';
     }
 }
-/*----------------Event listener for 'exist' button click--------------*/ 
+/*----------------Event listener for 'luck' button click--------------*/ 
 var luckButton = document.getElementById('luck-sol');
 luckButton.addEventListener('click', playLuck);
+
+/*-------------------Reveals 'intuition' video and plays-------------------*/ 
+function playIntuition(event) {
+    var currentValue = intuitionButton.value;
+    if (currentValue === 'not-playing') {
+        console.log('clicked intuition');
+        intuitionButton.value = 'playing';
+        let intuitionVid = document.getElementById('intuition');
+        intuitionVid.style.display = 'inline';
+        intuitionVid.play();
+        intuitionVid.volume = 0.4;
+        intuitionButton.style.boxShadow = '-3px -3px 3px #000';
+        let palC2Text = document.getElementById('vid-credit');
+        palC2Text.innerHTML = '<p>Intuition, Alan Watts (circa 1973)</p>';
+    } else {
+        intuitionButton.value = 'not-playing';
+        let intuitionVid = document.getElementById('intuition');
+        intuitionVid.style.display = 'none';
+        intuitionVid.pause();
+        intuitionButton.style.boxShadow = '3px 3px 3px #000';
+        let palC2Text = document.getElementById('vid-credit');
+        palC2Text.innerHTML = 'Maybe this will help...';
+    }
+}
+/*----------------Event listener for 'luck' button click--------------*/ 
+var intuitionButton = document.getElementById('int-aw');
+intuitionButton.addEventListener('click', playIntuition);
