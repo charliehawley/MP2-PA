@@ -47,7 +47,7 @@ header>p {
     padding-top: 10px;
     text-align: center;
     width: 300px;
-    height: 570px;
+    height: 600px;
     background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
     background-image: url(https://live.staticflickr.com/6218/6999853657_1dbf92c7da_b.jpg);
     border: 5px #fff outset;
@@ -131,8 +131,11 @@ h2 {
 
 /*---------Media query info----------*/
 #info {
+    position: relative;
+    top: 10px;
+    right: 5px;
     width: 300px;
-    height: 258px;
+    height: 330px;
     display: none;
     background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
     background-image: url(https://live.staticflickr.com/6218/6999853657_1dbf92c7da_b.jpg);
@@ -145,7 +148,7 @@ h2 {
     margin-top: 10px;
     padding-top: 10px;
     width: 300px;
-    height: 850px;
+    height: 950px;
     background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
     background-image: url(https://live.staticflickr.com/6218/6999853657_1dbf92c7da_b.jpg);
     border: 5px #fff outset;
@@ -156,7 +159,7 @@ hr {
 }
 
 .user-port p {
-    font-size: .8rem;
+    font-size: 1rem;
     padding: 10px 22px;
 }
 
@@ -256,7 +259,7 @@ footer {
 }
 
 #disclaimer {
-    font-size: .6rem;
+    font-size: .8rem;
     margin: 2px;
     text-align: center;
 }
