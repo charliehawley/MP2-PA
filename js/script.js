@@ -14,7 +14,7 @@ function palRespond(event) {
     } else {
         //--------Random response array--------
         let randomResponseArr = [
-            `You seem capable. <br>I'm sure you can ${userInput}. <br>😘`,
+            `You seem capable. <br>I'm sure you can <br>${userInput}. <br>😘`,
             `I don't know man, <br>you get kinda tense <br>when you ${userInput}. <br>😬`,
             `Are you sure you even want <br>to ${userInput}? <br>🤨`,
             `You've got to dream bigger. <br>Anyone can ${userInput}. <br>🥱`,

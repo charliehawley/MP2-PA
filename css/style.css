@@ -99,10 +99,14 @@ h2 {
     height: 150px;
     background-color: #000;
     font-family: lores-21-serif, sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #77fdd5;
     border: 5px #fff inset;
     overflow: scroll;
+}
+
+#pal-response {
+    padding: 5px;
 }
 
 #pals-eye {
