@@ -1,5 +1,4 @@
 @import url("https://use.typekit.net/odw1cig.css");
-@import url("https://use.typekit.net/odw1cig.css");
 
 * {
     margin: 0;
@@ -8,10 +7,12 @@
 }
 
 body {
-    font-family: all-round-gothic, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     color: #ffffcc;
+    font-family: ocr-a-std, sans-serif;
+    font-weight: 100;
+    text-shadow: -1px -1px 2px #000;
     background-color: #2b2c28;
     background-image: url('/assets/images/dashboard.jpg');
     background-repeat: repeat;
@@ -22,21 +23,18 @@ body {
 /*---------------------------Header---------------------------*/
 header {
     margin: 10px auto;
-    padding: 20px;
-    width: 260px;
+    width: 300px;
     border: 5px outset #fff;
     background: linear-gradient(#333, #424242)
 }
 
 header>h1 {
-    font-size: 2.3rem;
-    margin: 0;
-    font-family: all-round-gothic, sans-serif;
-    font-weight: 600;
-    font-style: italic;
+    font-size: 1.5rem;
+    margin: 20px 15px 10px;
 }
 
 header>p {
+    margin: 3px 15px 10px;
     font-size: .8rem;
 }
 
@@ -54,6 +52,7 @@ header>p {
     background-image: url(https://live.staticflickr.com/6218/6999853657_1dbf92c7da_b.jpg);
     border: 5px #fff outset;
 }
+
 .user-port {
     margin: 2% auto;
     background-color: #2b2c28;
@@ -61,15 +60,14 @@ header>p {
     border: 5px #fff inset;
 }
 
-#user-port>h2 {
-    padding: 5px;
-    font-family: all-round-gothic, sans-serif;
-    font-style: italic;
+h2 {
+    font-size: 1.2rem;
+    padding: 10px;
 }
 
 #user-port>p {
     padding: 5px;
-    font-size: .9rem;
+    font-size: .7rem;
 }
 
 #user-input>input {
@@ -84,8 +82,11 @@ header>p {
     width: 90%;
     height: 150px;
     background-color: #000;
+    font-family: lores-21-serif, sans-serif;
+    font-size: 1.3rem;
     color: #77fdd5;
     border: 5px #fff inset;
+    overflow: scroll;
 }
 
 #pals-eye {
@@ -134,8 +135,31 @@ header>p {
     border: 5px #fff outset;
 }
 
+#desc-c2 > p {
+    font-size: .8rem;
+    padding: 10px;
+}
+
 hr {
-    border: 1px #d8dbe2 outset;
+    border: 3px #d8dbe2 outset;
+}
+
+.user-port>p {
+    padding: 10px;
+}
+
+.c2-button {
+    margin: 0 10px 10px;
+    width: 230px;
+    display: inline-block;
+    background-color: #832e21;
+    color: #ffffcc;
+    font-family: printf, sans-serif;
+    text-shadow: 1px 1px 1px #000;
+    padding: 10px 20px;
+    border: 8px solid #222;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px #000;
 }
 
 #dr-pal-console {
@@ -153,20 +177,8 @@ hr {
     height: 20px;
     background-color: #000;
     color: #77fdd5;
+    font-family: lores-21-serif, sans-serif;
     border: 5px #fff inset;
-}
-
-.c2-button {
-    margin: 10px;
-    width: 230px;
-    display: inline-block;
-    background-color: #832e21;
-    color: #ffffcc;
-    font-family: printf, sans-serif;
-    padding: 10px 20px;
-    border: 8px solid #222;
-    border-radius: 3px;
-    box-shadow: 3px 3px 3px #000;
 }
 
 #wl-ex {
@@ -227,6 +239,7 @@ footer {
 }
 
 #disclaimer {
+    font-size: .6rem;
     margin: 2px;
     text-align: center;
 }

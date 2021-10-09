@@ -18,6 +18,9 @@ PAL will appear centrally on the homepage but there will be a resources page and
 ## Bugs
 * Module 1 'What are you thinking of doing?'
     * Although the text input field is prepopulated with 'I'm trying to...' (in order to force the syntax of the user input) if the user inserts a present participle verb (havING, chargING) where the verb would usually end in 'e', PAL won't append the 'e'. The output for these two examples is therefore 'hav' and 'charg' respectively.
+    * The longer the string, the more opportunity there is for the syntax to break the function: 
+    
+    ![image of confusing output](/assets/images/long-strings.jpg)
 
 ## Out of scope/future features
 * full screen from Module 2
@@ -25,5 +28,6 @@ PAL will appear centrally on the homepage but there will be a resources page and
 ## Testing 
 
 ## Credits
+* Adobe fonts
 
 ## Acknowledgements
