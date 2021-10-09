@@ -270,6 +270,7 @@ footer {
 
 
 /*--------------------------Media queries--------------------------*/
+/*------------------------------iPad-------------------------------*/
 @media screen and (min-width: 768px) {
     header {
         width: 79%
@@ -299,5 +300,20 @@ footer {
     footer {
         padding: 20px;
         width: 73%;
+    }
+}
+
+/*--------------------------iPad Pro------------------------------*/
+@media screen and (min-width: 1024px) {
+    #console-1 {
+        width: 495px;
+    }
+
+    #console-2 {
+        width: 495px;
+    }
+
+    #info {
+        width: 495px;
     }
 }
