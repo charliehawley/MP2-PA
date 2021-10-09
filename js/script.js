@@ -1,18 +1,18 @@
-/*------------------Module 1 PAL user response function-------------------*/ 
+//------------------MODULE 1 PAL user response function-------------------
 function palRespond(event) {
     event.preventDefault();
     let userInput = document.getElementById('user-activity').value.toLowerCase();
     console.log(userInput);
 
-    /*--------Response syntax modifier--------*/
+    //--------Response syntax modifier--------
     userInput = userInput.replace(/my/g, 'your');
     userInput = userInput.replace(/ing/g, '');
 
-    /*---Empty submission response generator---*/
+    //---Empty submission response generator---
     if (userInput === '') {
         var responseString = 'Do you really have no ambition? <br>Type something in.';
     } else {
-        /*--------Random response array--------*/
+        //--------Random response array--------
         let randomResponseArr = [
             `You seem capable. <br>I'm sure you can ${userInput}. <br>😘`,
             `I don't know man, <br>you get kinda tense <br>when you ${userInput}. <br>😬`,
@@ -25,22 +25,22 @@ function palRespond(event) {
             `You want to ${userInput}? <br>You're going to miss <br>LOADS of great content <br>on Instagram if you do that. <br>📱`,
             `Only true masters <br>can ${userInput}. <br>🧘‍♀️`,
         ];
-        /*--------Random index generator--------*/
+        //--------Random index generator--------
         let x = Math.floor(Math.random() * 10);
         console.log(x);
         var responseString = randomResponseArr[x];
     }
-    /*------Assign response string to HTML------*/
+    //------Assign response string to HTML------
     let palResponse = document.getElementById('pal-response');
     palResponse.innerHTML = responseString;
 }
-/*--------Event listener (submit)--------*/
+//--------Event listener (submit)--------
 let userSubmit = document.getElementById('user-input');
 userSubmit.addEventListener('submit', palRespond);
 
 
-/*----------------Module 2 PAL video reveal and play---------------*/
-/*-------------------Reveals 'exist' video and plays-------------------*/ 
+/*----------------MODULE 2 PAL video reveal and play---------------
+-------------------Reveals 'exist' video and plays-------------------*/
 function playWlex(event) {
     var currentWlexValue = wlexButton.value;
     if (currentWlexValue === 'not-playing' && luckButton.value !== 'playing' && intuitionButton.value !== 'playing') {
@@ -62,11 +62,11 @@ function playWlex(event) {
         palC2Text.innerHTML = 'Maybe this will help...';
     }
 }
-/*----------------Event listener for 'exist' button click--------------*/ 
+//----------------Event listener for 'exist' button click--------------*/ 
 var wlexButton = document.getElementById('exist');
 wlexButton.addEventListener('click', playWlex);
 
-/*-------------------Reveals 'luck' video and plays-------------------*/ 
+//-------------------Reveals 'luck' video and plays------------------- 
 function playLuck(event) {
     var currentLuckValue = luckButton.value;
     if (currentLuckValue === 'not-playing' && wlexButton.value !== 'playing' && intuitionButton.value !== 'playing') {
@@ -89,11 +89,11 @@ function playLuck(event) {
         palC2Text.innerHTML = 'Maybe this will help...';
     }
 }
-/*----------------Event listener for 'luck' button click--------------*/ 
+//----------------Event listener for 'luck' button click-------------- 
 var luckButton = document.getElementById('luck-sol');
 luckButton.addEventListener('click', playLuck);
 
-/*-------------------Reveals 'intuition' video and plays-------------------*/ 
+//-------------------Reveals 'intuition' video and plays------------------- 
 function playIntuition(event) {
     var currentIntValue = intuitionButton.value;
     if (currentIntValue === 'not-playing' && wlexButton.value !== 'playing' && luckButton.value !== 'playing') {
@@ -116,6 +116,6 @@ function playIntuition(event) {
         palC2Text.innerHTML = 'Maybe this will help...';
     }
 }
-/*----------------Event listener for 'intuition' button click--------------*/ 
+//----------------Event listener for 'intuition' button click--------------
 var intuitionButton = document.getElementById('int-aw');
 intuitionButton.addEventListener('click', playIntuition);
