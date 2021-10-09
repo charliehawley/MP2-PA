@@ -38,6 +38,21 @@ function palRespond(event) {
 let userSubmit = document.getElementById('user-input');
 userSubmit.addEventListener('submit', palRespond);
 
+//------Submit button depress on/off-----
+var submitButton = document.getElementById('submit');
+submitButton.addEventListener('mousedown', depress);
+submitButton.addEventListener('mouseup', raise);
+
+function depress(event) {
+    console.log('depressed!');
+    submitButton.style.boxShadow = '-3px -3px 3px #000';
+}
+
+function raise(event) {
+    console.log('raised!')
+    submitButton.style.boxShadow = '3px 3px 3px #000';
+}
+
 
 /*----------------MODULE 2 PAL video reveal and play---------------
 -------------------Reveals 'exist' video and plays-------------------*/
