@@ -10,15 +10,21 @@ body {
     font-family: all-round-gothic, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #d8dbe2;
+    color: #ffffcc;
     background-color: #2b2c28;
+    background-image: url('/assets/images/dashboard.jpg');
+    background-repeat: repeat;
+    background-size: 100px 100px;
 }
 
 
-/*------------Header-------------*/
+/*---------------------------Header---------------------------*/
 header {
+    margin: 10px auto;
     padding: 20px;
-    width: 90%;
+    width: 260px;
+    border: 5px outset #fff;
+    background: linear-gradient(#333, #424242)
 }
 
 header>h1 {
@@ -34,8 +40,10 @@ header>p {
 }
 
 
-/*------------Main-------------*/
-#border-div {
+/*---------------------------Main-----------------------------*/
+
+/*------------Console 1-------------*/
+#console-1 {
     margin: auto;
     padding-top: 10px;
     text-align: center;
@@ -45,8 +53,7 @@ header>p {
     background-image: url(https://live.staticflickr.com/6218/6999853657_1dbf92c7da_b.jpg);
     border: 5px #fff outset;
 }
-
-#user-port {
+.user-port {
     margin: 2% auto;
     background-color: #2b2c28;
     width: 90%;
@@ -64,7 +71,7 @@ header>p {
     font-size: .9rem;
 }
 
-input {
+#user-input>input {
     margin: 5px;
     padding: 5px;
     background-color: #ddd;
@@ -76,7 +83,7 @@ input {
     width: 90%;
     height: 150px;
     background-color: #000;
-    color: #fff;
+    color: #77fdd5;
     border: 5px #fff inset;
 }
 
@@ -103,15 +110,161 @@ input {
     box-shadow: 0px 0px 5px #fff;
 }
 
+/*---------Media query info----------*/
+#info {
+    margin-top: 10px;
+    display: none;
+    flex-wrap: wrap;
+    background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
+    background-image: url(https://live.staticflickr.com/6218/6999853657_1dbf92c7da_b.jpg);
+    border: 5px #fff outset;
+}
 
-/*------------Footer-------------*/
+/*------------Console 2-------------*/
+#console-2 {
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+    width: 300px;
+    height: 850px;
+    background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
+    background-image: url(https://live.staticflickr.com/6218/6999853657_1dbf92c7da_b.jpg);
+    border: 5px #fff outset;
+}
+
+hr {
+    border: 1px #d8dbe2 outset;
+}
+
+#dr-pal-console {
+    margin: 10px auto 0;
+    width: 90%;
+    height: 150px;
+    background-color: #000;
+    color: #fff;
+    border: 5px #fff inset;    
+}
+
+#vid-credit {
+    margin: 3px auto 30px;
+    width: 90%;
+    height: 20px;
+    background-color: #000;
+    color: #77fdd5;
+    border: 5px #fff inset;
+}
+
+#exist {
+    margin: 10px;
+    width: 230px;
+    display: inline-block;
+    background-color: #832e21;
+    color: #ffffcc;
+    padding: 10px 20px;
+    border: 8px solid #222;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px #000;
+}
+
+#luck-sol {
+    margin: 0 0 10px;
+    width: 230px;
+    display: inline-block;
+    background-color: #832e21;
+    color: #ffffcc;
+    padding: 10px 20px;
+    border: 8px solid #222;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px #000;
+}
+
+#wl-ex {
+    height: 147px;
+    padding-top: 1px;
+    display: none;
+}
+
+#luck {
+    height: 148px;
+    padding-top: 1px;
+    display: none;
+}
+
+#pal-prescription-speaker {
+    margin: 0px auto 50px;
+    width: 150px;
+    height: 150px;
+    background-color: #000;
+    background-image: url('/assets/images/grille.jpg');
+    background-position: center;
+    background-size: cover;
+    border: 5px #fff inset; 
+    border-radius: 50%;
+}
+
+#prescription input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+#prescription label {
+    margin: 10px;
+    display: inline-block;
+    background-color: #832e21;
+    color: #ffffcc;
+    padding: 10px 20px;
+    border: 8px solid #222;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px #000;
+}
+
+
+/*-----------------------------Footer-----------------------------*/
 footer {
-    display: inline;
-    bottom: 0px;
-    margin: 30px 30% 0 30%;
+    margin: 10px auto;
+    padding: 5px;
+    width: 290px;
+    border: 5px outset #fff;
+    background: linear-gradient(#424242, #222)
 }
 
 #disclaimer {
-    margin: 20px;
+    margin: 2px;
     text-align: center;
+}
+
+
+/*--------------------------Media queries--------------------------*/
+@media screen and (min-width: 768px) {
+    header {
+        width: 73%
+    }
+
+    main {
+        display: flex;
+    }
+
+    #console-1 {
+        margin: 10px 5px auto 10%;
+    }
+
+    #wl-ex {
+        height: 144px;
+        padding-top: 2px;
+    }
+
+    #info {
+        display: none;
+    }
+
+    #console-2 {
+        margin: 10px 10% auto 5px;
+    }
+
+    footer {
+        padding: 20px;
+        width: 73%;
+    }
 }
