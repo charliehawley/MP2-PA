@@ -5,12 +5,12 @@ function palRespond(event) {
     console.log(userInput);
 
     /*--------Response syntax modifier--------*/
-    userInput = userInput.replace(/my/g, 'your')
-    userInput = userInput.replace(/ing/g, '')
+    userInput = userInput.replace(/my/g, 'your');
+    userInput = userInput.replace(/ing/g, '');
 
     /*---Empty submission response generator---*/
     if (userInput === '') {
-        var responseString = 'Do you really have no ambition? <br>Type something in.'
+        var responseString = 'Do you really have no ambition? <br>Type something in.';
     } else {
         /*--------Random response array--------*/
         let randomResponseArr = [
@@ -24,11 +24,11 @@ function palRespond(event) {
             `I'm sorry, <br>I can't let you ${userInput}. <br>⭕`,
             `You want to ${userInput}? <br>You're going to miss <br>LOADS of great content <br>on instagram if you do that. <br>📱`,
             `Only true masters <br>can ${userInput}. <br>🧘‍♀️`,
-        ]
+        ];
         /*--------Random index generator--------*/
         let x = Math.floor(Math.random() * 10);
-        console.log(x)
-        var responseString = randomResponseArr[x]
+        console.log(x);
+        var responseString = randomResponseArr[x];
     }
     /*------Assign response string to HTML------*/
     let palResponse = document.getElementById('pal-response');
@@ -42,8 +42,8 @@ userSubmit.addEventListener('submit', palRespond);
 /*----------------Module 2 PAL video reveal and play---------------*/
 /*-------------------Reveals 'exist' video and plays-------------------*/ 
 function playWlex(event) {
-    var currentValue = wlexButton.value;
-    if (currentValue === 'not-playing') {
+    var currentWlexValue = wlexButton.value;
+    if (currentWlexValue === 'not-playing' && luckButton.value !== 'playing' && intuitionButton.value !== 'playing') {
         console.log('clicked wl-ex');
         wlexButton.value = 'playing';
         let wlexVid = document.getElementById('wl-ex');
@@ -68,14 +68,14 @@ wlexButton.addEventListener('click', playWlex);
 
 /*-------------------Reveals 'luck' video and plays-------------------*/ 
 function playLuck(event) {
-    var currentValue = luckButton.value;
-    if (currentValue === 'not-playing') {
+    var currentLuckValue = luckButton.value;
+    if (currentLuckValue === 'not-playing' && wlexButton.value !== 'playing' && intuitionButton.value !== 'playing') {
         console.log('clicked luck');
         luckButton.value = 'playing';
         let luckVid = document.getElementById('luck');
         luckVid.style.display = 'inline';
         luckVid.play();
-        luckVid.volume = 0.4;
+        luckVid.volume = 0.3;
         luckButton.style.boxShadow = '-3px -3px 3px #000';
         let palC2Text = document.getElementById('vid-credit');
         palC2Text.innerHTML = '<p>Luck, School of Life (2018)</p>';
@@ -95,14 +95,14 @@ luckButton.addEventListener('click', playLuck);
 
 /*-------------------Reveals 'intuition' video and plays-------------------*/ 
 function playIntuition(event) {
-    var currentValue = intuitionButton.value;
-    if (currentValue === 'not-playing') {
+    var currentIntValue = intuitionButton.value;
+    if (currentIntValue === 'not-playing' && wlexButton.value !== 'playing' && luckButton.value !== 'playing') {
         console.log('clicked intuition');
         intuitionButton.value = 'playing';
         let intuitionVid = document.getElementById('intuition');
         intuitionVid.style.display = 'inline';
         intuitionVid.play();
-        intuitionVid.volume = 0.4;
+        intuitionVid.volume = 0.6;
         intuitionButton.style.boxShadow = '-3px -3px 3px #000';
         let palC2Text = document.getElementById('vid-credit');
         palC2Text.innerHTML = '<p>Intuition, Alan Watts (circa 1973)</p>';
