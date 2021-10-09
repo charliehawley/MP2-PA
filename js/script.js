@@ -116,6 +116,6 @@ function playIntuition(event) {
         palC2Text.innerHTML = 'Maybe this will help...';
     }
 }
-/*----------------Event listener for 'luck' button click--------------*/ 
+/*----------------Event listener for 'intuition' button click--------------*/ 
 var intuitionButton = document.getElementById('int-aw');
 intuitionButton.addEventListener('click', playIntuition);

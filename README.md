@@ -1,7 +1,7 @@
-# PAL
-PAL is for the disenfranchised and disempowered. PAL will make small life choices for you in the hope that the resources PAL provides will help you to empower yourself. Once PAL has made the decision for you he will provide you with a resource related to personal accountability/empowerment.
+# PAL 🤖
+PAL is for the disenfranchised and disempowered. PAL will make small life choices for you in the hope that the resources PAL provides will help you to empower yourself. PAL's first module makes the decision for you and the second will provide you with a resource related to personal accountability/empowerment.
 
-I want PAL to represent nihilism so that PAL can embody and displace the user's nihilism and help them to focus on empowering themselves.
+I want PAL to displace the user's nihilism so that PAL can help them to focus on empowering themselves.
 
 ## Strategy
 PAL is intended to empower by temporarily displacing personal accountability and providing resources to those who need to redirect their potential.
@@ -14,3 +14,16 @@ PAL is the first and only element you can interact with on the site. He will the
 
 ## Skeleton
 PAL will appear centrally on the homepage but there will be a resources page and about section on the site to explain the philosophy of PAL and also a disclaimer recommending against using PAL for serious personal use.
+
+## Bugs
+* Module 1 'What are you thinking of doing?'
+    * Although the text input field is prepopulated with 'I'm trying to...' (in order to force the syntax of the user input) if the user inserts a present participle verb (havING, chargING) where the verb would usually end in 'e', PAL won't append the 'e'. The output for these two examples is therefore 'hav' and 'charg' respectively.
+
+## Out of scope/future features
+* full screen from Module 2
+
+## Testing 
+
+## Credits
+
+## Acknowledgements
