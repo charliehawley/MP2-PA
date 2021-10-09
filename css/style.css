@@ -104,6 +104,7 @@ h2 {
 }
 
 #pals-eye {
+    position: relative;
     margin: 25px auto;
     width: 120px;
     height: 120px;
@@ -120,17 +121,17 @@ h2 {
     height: 10px;
     border-radius: 50%;
     background: radial-gradient(#fff, #e94f37);
-    left: 55%;
-    top: 660px;
+    left: 80px;
+    top: 27px;
     z-index: 2;
     box-shadow: 0px 0px 5px #fff;
 }
 
 /*---------Media query info----------*/
 #info {
-    margin-top: 10px;
+    width: 300px;
+    height: 258px;
     display: none;
-    flex-wrap: wrap;
     background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
     background-image: url(https://live.staticflickr.com/6218/6999853657_1dbf92c7da_b.jpg);
     border: 5px #fff outset;
@@ -141,7 +142,6 @@ h2 {
     margin: auto;
     margin-top: 10px;
     padding-top: 10px;
-    text-align: center;
     width: 300px;
     height: 850px;
     background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
@@ -149,17 +149,17 @@ h2 {
     border: 5px #fff outset;
 }
 
-#desc-c2 > p {
-    font-size: .8rem;
-    padding: 10px;
-}
-
 hr {
     border: 3px #d8dbe2 outset;
 }
 
-.user-port>p {
-    padding: 10px;
+.user-port p {
+    font-size: .8rem;
+    padding: 10px 22px;
+}
+
+#buttons {
+    text-align: center;
 }
 
 .c2-button {
@@ -191,6 +191,7 @@ hr {
     height: 20px;
     background-color: #000;
     color: #77fdd5;
+    text-align: center;
     font-family: lores-21-serif, sans-serif;
     border: 5px #fff inset;
 }
@@ -262,7 +263,7 @@ footer {
 /*--------------------------Media queries--------------------------*/
 @media screen and (min-width: 768px) {
     header {
-        width: 73%
+        width: 79%
     }
 
     main {
@@ -279,7 +280,9 @@ footer {
     }
 
     #info {
-        display: none;
+        display: block;
+        padding: 0;
+        margin: 0;
     }
 
     #console-2 {
