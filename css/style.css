@@ -282,6 +282,10 @@ footer {
         width: 350px;
     }
 
+    #submit {
+        -webkit-appearance: none;
+    }
+
     #info {
         display: block;
     }
