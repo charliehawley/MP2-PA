@@ -238,12 +238,6 @@ video {
     border-radius: 50%;
 }
 
-#prescription input[type="radio"] {
-    opacity: 0;
-    position: fixed;
-    width: 0;
-}
-
 #prescription label {
     margin: 10px;
     display: inline-block;
@@ -335,4 +329,161 @@ footer {
         margin-left: 2px;
     }
 
+}
+
+/*-----------------------Large screens---------------------------*/
+@media screen and (min-width: 1920px) {
+    header > h1 {
+        font-size: 3.5rem;
+    }
+
+    header > p {
+        font-size: 1.5rem;
+    }
+
+    main {
+        display: block;
+    }
+
+    #console-1 {
+        margin: 5px;
+        position: absolute;
+        display: inline-block;
+        width: 89%;
+        right: 5%;
+        height: auto;
+        background-size: cover;
+    }
+
+    .user-port {
+        margin: 30px auto 30px 30px;
+        position: absolute;
+        display: inline-block;
+        left: 20px;
+        width: 30%;
+        height: 350px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .user-port>p {
+        font-size: 1.5rem;
+        margin: 20px auto 0;
+    }
+
+    #user-activity {
+        font-size: 1.5rem;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #submit {
+        font-size: 1.5rem;
+    }
+
+    #pal-console{
+        width: 500px;
+        height: 350px;
+        margin: 30px auto;
+        overflow: hidden;
+        font-size: 2rem;
+    }
+
+    #pal-response {
+        margin: auto;
+    }
+
+    #pals-eye{
+        position: absolute;
+        left: none;
+        right: 10%;
+        top: 2%;
+        float: right;
+        height: 250px;
+        width: 250px;
+        border: 60px #666 inset;
+    }
+
+    #glint {
+        width: 20px;
+        height: 20px;
+        top: 60px;
+        left: 170px;
+    }
+
+    #info {
+        display: none;
+    }
+
+    #console-2 {
+        position: absolute;
+        display: inline-block;
+        width: 89%;
+        top: 47.5%;
+        left: 5.15%;
+        height: 480px;
+        background-size: cover;
+    }
+
+    #large-port {
+        height: 400px;
+    }
+
+    #desc-c2 > p {
+        font-size: 1.3rem;
+    }
+
+    #large-port > p {
+        margin: 5px;
+    }
+
+    #buttons > button {
+        font-size: 1.3rem;
+        width: 180px;
+    }
+
+    #dr-pal-console {
+        width: 600px;
+        height: 350px;
+        margin: 30px auto;
+        overflow: hidden;
+        font-size: 1.5rem;
+    }
+
+    video {
+        height: 334px;
+        margin-left: -1px;
+    }
+
+    #vid-credit {
+        position: relative;
+        bottom: 21px;
+        width: 600px;
+        height: 30px;
+        font-size: 1.5rem;
+    }
+
+    #pal-prescription-speaker {
+        position: absolute;
+        right: 11.4%;
+        top: 23%;
+        height: 300px;
+        width: 300px;
+    }
+
+    footer {
+        position: absolute;
+        width: 88%;
+        left: 5%;
+        right: 50%;
+        bottom: 10px;
+    }
+
+    #disclaimer {
+        display: inline-block;
+        width: 40%;
+        font-size: 1rem;
+    }
 }

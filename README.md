@@ -26,6 +26,7 @@ PAL will appear centrally on the homepage but there will be a resources page and
 * full screen from Module 2
 * log and filter responses from Module 1 so that you don't recieve the same result twice
 ## Testing 
+* jshint - returns fully validated JS
 
 ## Credits
 * Adobe fonts
