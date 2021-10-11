@@ -155,6 +155,17 @@ h2 {
     border: 5px #fff outset;
 }
 
+#info-inner {
+    width: 330px;
+    height: 310px;
+    text-align: left;
+}
+
+#info-inner > p {
+    margin: 10px;
+    font-size: .9rem;
+}
+
 /*------------Console 2-------------*/
 #console-2 {
     margin: auto;
@@ -287,6 +298,25 @@ footer {
     text-align: center;
 }
 
+#git-link {
+    display: none;
+    margin-top: 16px;
+    margin-right: 30px;
+    text-align: center;
+    font-size: .8rem;
+    float: right;
+}
+
+#git-link > a {
+    text-decoration: none;
+    color: #ffffcc;
+}
+
+#git-link > p {
+    font-size: .6rem;
+    padding-top: 20px;
+} 
+
 
 /*--------------------------Media queries--------------------------*/
 /*------------------------------iPad-------------------------------*/
@@ -335,6 +365,11 @@ footer {
 
     #info {
         width: 450px;
+    }
+
+    #info-inner {
+        width: 420px;
+        height: 300px;
     }
 
     #console-2 {
@@ -508,15 +543,19 @@ footer {
 
     footer {
         position: absolute;
-        width: 88%;
-        left: 5%;
-        right: 50%;
+        width: 87%;
+        left: 5.2%;
         bottom: 2px;
     }
 
     #disclaimer {
         display: inline-block;
-        width: 40%;
+        width: 35%;
         font-size: .7rem;
+        text-align: left;
+    }
+
+    #git-link {
+        display: inline;
     }
 }
