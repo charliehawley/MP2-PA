@@ -89,19 +89,28 @@ The color scheme is also derivative of *2001: A Space Odyssey*
 ---
 
 ## Technologies Included
-HTML<br>
-CSS<br>
-JavaScript<br>
-Adobe Fonts<br>
-Gitpod<br>
-GitHub<br>
-Coolors<br>
-Web AIM<br>
+- HTML
+- CSS
+- JavaScript
+- Adobe Fonts
+- Gitpod
+- GitHub
+- Coolors
+- Web AIM
 
 ## Testing
+HTML validated using W3C Markup Validation Service and returns no errors.<br>
+
+CSS validated using W3C CSS Validation Service and returns no errors.<br>
+
 JS hint - returned 'responseString' used out of scope however when variable was redeclared 'responseString' returned 'undefined' so both instances (line 30, line 34) were left unchanged.
 
 ## Deployment
+The site was created using a versioning system integrated with GitHub via Gitpod.
+
+The site is hosted on GitHub pages at the link above and will adapt whenever changes are made to the main branch.
+
+You can run this respository locally by running git clone https://github.com/charliehawley/MP2-PA.git in your terminal.
 
 ## Known Bugs
 * Module 1 'What are you thinking of doing?'
