@@ -96,7 +96,7 @@ The color scheme is also derivative of *2001: A Space Odyssey*
 - Gitpod
 - GitHub
 - Coolors
-- Web AIM
+- Web AIM color contrast checker
 
 ## Testing
 HTML validated using W3C Markup Validation Service and returns no errors.<br>
@@ -130,7 +130,15 @@ You can run this respository locally by running git clone https://github.com/cha
 
 ## Credits
 * Adobe fonts - OCR-A Std, Lo-Res 21 Serif
+* Textures were sourced from Cadhatch.com and are free to use
+* All copy created by Charlie Hawley
 
 ### Media
+All content in Module 2 is intended for educational use and as such falls under fair use policy.<br>
+All creators are credited and referenced appropriately.<br>
+* LINKLATER, Richard: *Waking Life* 2001.
+* SCHOOL OF LIFE: *How Much Does Luck Decide Our Lives?* 2018.
+* WATTS, Alan: *Intuition* circa 1973.
 
 ## Acknowledgements
+Stanley Kubrick's *2001: A Space Odyssey* was clearly a huge influence on this project and as such, P.A.L. has one fairly ominous response in the pool, an echo from the past.
