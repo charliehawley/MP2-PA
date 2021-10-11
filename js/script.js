@@ -39,7 +39,7 @@ function palRespond(event) {
 let userSubmit = document.getElementById('user-input');
 userSubmit.addEventListener('submit', palRespond);
 
-//------Submit button depress on/off for click-----
+//------Submit button depress and raise and P.A.L. eye light-----
 var submitButton = document.getElementById('submit');
 submitButton.addEventListener('mousedown', depress);
 submitButton.addEventListener('mouseup', raise);
@@ -83,6 +83,7 @@ function playWlex(event) {
         drPalLed.style.background = 'radial-gradient(rgb(177, 74, 74), #e94f37)';
     }
 }
+
 //--------------Event listener for 'exist' button click------------ 
 var wlexButton = document.getElementById('exist');
 wlexButton.addEventListener('click', playWlex);
@@ -112,6 +113,7 @@ function playLuck(event) {
         drPalLed.style.background = 'radial-gradient(rgb(177, 74, 74), #e94f37)';
     }
 }
+
 //--------------Event listener for 'luck' button click------------ 
 var luckButton = document.getElementById('luck-sol');
 luckButton.addEventListener('click', playLuck);
@@ -141,6 +143,7 @@ function playIntuition(event) {
         drPalLed.style.background = 'radial-gradient(rgb(177, 74, 74), #e94f37)';
     }
 }
+
 //----------Event listener for 'intuition' button click---------
 var intuitionButton = document.getElementById('int-aw');
 intuitionButton.addEventListener('click', playIntuition);

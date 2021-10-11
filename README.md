@@ -22,6 +22,8 @@ P.A.L. will appear centrally on the homepage but there will be a resources page 
     
     ![image of confusing output](/assets/images/long-strings.jpg)
 
+    * IOS device clicks don't trigger the P.A.L. lamp on/off
+
 * Module 2 'Dr P.A.L.'
     * Playing a video shows the credit for that video in the vid-credit panel however clicking on a video button whilst another video is playing replaced the credit with the placeholder text and continues to play the original video.
 
