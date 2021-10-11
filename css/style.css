@@ -123,8 +123,8 @@ h2 {
 
 #pal-active {
     display: none;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background: radial-gradient(rgba(255, 56, 20, 0.8), rgba(0, 0, 0, 0));
     filter: drop-shadow(20px 20px #666,
