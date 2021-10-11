@@ -36,13 +36,13 @@ function palRespond(event) {
 //--------Event listener (submit)--------
 let userSubmit = document.getElementById('user-input');
 userSubmit.addEventListener('submit', palRespond);
-userSubmit.addEventListener('submit', palActivate)
+userSubmit.addEventListener('submit', palActivate);
 
 //---------P.A.L.s eye activate----------
 function palActivate(event) {
     let palActive = document.getElementById('pal-active');  
     palActive.style.display = 'block';
-    setTimeout(function(){palActive.style.display = 'none'}, 500);
+    setTimeout(function(){palActive.style.display = 'none';}, 800);
 }
 
 //------Submit button depress and raise and P.A.L. eye light-----
@@ -63,9 +63,9 @@ function raise(event) {
 -------------------Reveals 'exist' video and plays----------------*/
 function playWlex(event) {
     var currentWlexValue = wlexButton.value;
-    if (currentWlexValue === 'not-playing' 
-        && luckButton.value !== 'playing' 
-        && intuitionButton.value !== 'playing') {
+    if (currentWlexValue === 'not-playing' && 
+        luckButton.value !== 'playing' && 
+        intuitionButton.value !== 'playing') {
         wlexButton.value = 'playing';
         let wlexVid = document.getElementById('wl-ex');
         wlexVid.style.display = 'inline';
@@ -94,9 +94,9 @@ wlexButton.addEventListener('click', playWlex);
 //-------------------Reveals 'luck' video and plays---------------- 
 function playLuck(event) {
     var currentLuckValue = luckButton.value;
-    if (currentLuckValue === 'not-playing' 
-        && wlexButton.value !== 'playing' 
-        && intuitionButton.value !== 'playing') {
+    if (currentLuckValue === 'not-playing' && 
+        wlexButton.value !== 'playing' && 
+        intuitionButton.value !== 'playing') {
         luckButton.value = 'playing';
         let luckVid = document.getElementById('luck');
         luckVid.style.display = 'inline';
@@ -126,9 +126,9 @@ luckButton.addEventListener('click', playLuck);
 //---------------Reveals 'intuition' video and plays-------------- 
 function playIntuition(event) {
     var currentIntValue = intuitionButton.value;
-    if (currentIntValue === 'not-playing' 
-        && wlexButton.value !== 'playing' 
-        && luckButton.value !== 'playing') {
+    if (currentIntValue === 'not-playing' && 
+        wlexButton.value !== 'playing' && 
+        luckButton.value !== 'playing') {
         intuitionButton.value = 'playing';
         let intuitionVid = document.getElementById('intuition');
         intuitionVid.style.display = 'inline';

@@ -48,7 +48,8 @@ header>p {
     text-align: center;
     width: 300px;
     height: 600px;
-    background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
+    background: linear-gradient(to top, silver 0%, 
+                                        rgb(87, 87, 87) 100%);
     background-image: url(https://live.staticflickr.com/6218/6999853657_1dbf92c7da_b.jpg);
     border: 5px #fff outset;
 }
@@ -117,8 +118,6 @@ h2 {
     border-radius: 50%;
     background: radial-gradient(#e94f37, #000);
     border: 30px #666 inset;
-    filter: drop-shadow(20px 20px #666,
-                        20px 20px #666);
 }
 
 #pal-active {
@@ -126,9 +125,8 @@ h2 {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: radial-gradient(rgba(255, 56, 20, 0.8), rgba(0, 0, 0, 0));
-    filter: drop-shadow(20px 20px #666,
-                        20px 20px #666);
+    background: radial-gradient(rgba(255, 56, 20, 0.8), 
+                                rgba(0, 0, 0, 0));
 }
 
 #glint {
@@ -151,7 +149,8 @@ h2 {
     width: 350px;
     height: 330px;
     display: none;
-    background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
+    background: linear-gradient(to top, silver 0%, 
+                                        rgb(87, 87, 87) 100%);
     background-image: url(https://live.staticflickr.com/6218/6999853657_1dbf92c7da_b.jpg);
     border: 5px #fff outset;
 }
@@ -162,7 +161,8 @@ h2 {
     margin-top: 10px;
     width: 300px;
     height: 950px;
-    background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
+    background: linear-gradient(to top, silver 0%, 
+                                        rgb(87, 87, 87) 100%);
     background-image: url(https://live.staticflickr.com/6218/6999853657_1dbf92c7da_b.jpg);
     border: 5px #fff outset;
 }
@@ -252,7 +252,8 @@ video {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: radial-gradient(rgb(177, 74, 74), #e94f37);
+    background: radial-gradient(rgb(177, 74, 74), 
+                                #e94f37);
     left: 10px;
     top: 10px;
     z-index: 2;
@@ -360,7 +361,6 @@ footer {
 @media screen and (min-width: 1920px) {
     header > h1 {
         font-size: 2.3rem;
-        margin: 10px none;
         padding-left: 13px;
     }
 
@@ -429,7 +429,6 @@ footer {
 
     #pals-eye{
         position: absolute;
-        left: none;
         right: 10%;
         top: 4%;
         height: 150px;
