@@ -1,9 +1,7 @@
 //----------------MODULE 1 PAL user response function-----------------
-
 function palRespond(event) {
     event.preventDefault();
     let userInput = document.getElementById('user-activity').value.toLowerCase();
-    console.log(userInput);
 
     //--------Response syntax modifier--------
     userInput = userInput.replace(/ my /g, ' your ');
@@ -29,7 +27,6 @@ function palRespond(event) {
         ];
         //--------Random index generator--------
         let x = Math.floor(Math.random() * 10);
-        console.log(x);
         responseString = randomResponseArr[x];
     }
     //------Assign response string to HTML------
@@ -54,12 +51,10 @@ submitButton.addEventListener('mousedown', depress);
 submitButton.addEventListener('mouseup', raise);
 
 function depress(event) {
-    console.log('depressed!');
     submitButton.style.boxShadow = '-3px -3px 3px #000';
 }
 
 function raise(event) {
-    console.log('raised!')
     submitButton.style.boxShadow = '3px 3px 3px #000';
 }
 
@@ -71,7 +66,6 @@ function playWlex(event) {
     if (currentWlexValue === 'not-playing' 
         && luckButton.value !== 'playing' 
         && intuitionButton.value !== 'playing') {
-        console.log('clicked wl-ex');
         wlexButton.value = 'playing';
         let wlexVid = document.getElementById('wl-ex');
         wlexVid.style.display = 'inline';
@@ -103,7 +97,6 @@ function playLuck(event) {
     if (currentLuckValue === 'not-playing' 
         && wlexButton.value !== 'playing' 
         && intuitionButton.value !== 'playing') {
-        console.log('clicked luck');
         luckButton.value = 'playing';
         let luckVid = document.getElementById('luck');
         luckVid.style.display = 'inline';
@@ -136,7 +129,6 @@ function playIntuition(event) {
     if (currentIntValue === 'not-playing' 
         && wlexButton.value !== 'playing' 
         && luckButton.value !== 'playing') {
-        console.log('clicked intuition');
         intuitionButton.value = 'playing';
         let intuitionVid = document.getElementById('intuition');
         intuitionVid.style.display = 'inline';
