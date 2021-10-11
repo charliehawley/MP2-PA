@@ -252,12 +252,11 @@ video {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: radial-gradient(rgb(151, 89, 89), #e94f37);
+    background: radial-gradient(rgb(177, 74, 74), #e94f37);
     left: 10px;
     top: 10px;
     z-index: 2;
     border: 2px inset #ddd;
-    /* box-shadow: 0px 0px 10px #000; */
 }
 
 #prescription label {

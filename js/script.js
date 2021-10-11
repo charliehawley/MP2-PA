@@ -71,6 +71,7 @@ function playWlex(event) {
         wlexButton.style.boxShadow = '-3px -3px 3px #000';
         let palC2Text = document.getElementById('vid-credit');
         palC2Text.innerHTML = '<p>Waking Life, LINKLATER (2001)</p>';
+        drPalLed.style.background = 'radial-gradient(#fff, #e94f37)';
     } else {
         wlexButton.value = 'not-playing';
         let wlexVid = document.getElementById('wl-ex');
@@ -79,6 +80,7 @@ function playWlex(event) {
         wlexButton.style.boxShadow = '3px 3px 3px #000';
         let palC2Text = document.getElementById('vid-credit');
         palC2Text.innerHTML = 'Maybe this will help...';
+        drPalLed.style.background = 'radial-gradient(rgb(177, 74, 74), #e94f37)';
     }
 }
 //--------------Event listener for 'exist' button click------------ 
@@ -98,6 +100,7 @@ function playLuck(event) {
         luckButton.style.boxShadow = '-3px -3px 3px #000';
         let palC2Text = document.getElementById('vid-credit');
         palC2Text.innerHTML = '<p>Luck, School of Life (2018)</p>';
+        drPalLed.style.background = 'radial-gradient(#fff, #e94f37)';
     } else {
         luckButton.value = 'not-playing';
         let luckVid = document.getElementById('luck');
@@ -106,6 +109,7 @@ function playLuck(event) {
         luckButton.style.boxShadow = '3px 3px 3px #000';
         let palC2Text = document.getElementById('vid-credit');
         palC2Text.innerHTML = 'Maybe this will help...';
+        drPalLed.style.background = 'radial-gradient(rgb(177, 74, 74), #e94f37)';
     }
 }
 //--------------Event listener for 'luck' button click------------ 
@@ -125,6 +129,7 @@ function playIntuition(event) {
         intuitionButton.style.boxShadow = '-3px -3px 3px #000';
         let palC2Text = document.getElementById('vid-credit');
         palC2Text.innerHTML = '<p>Intuition, Alan Watts (circa 1973)</p>';
+        drPalLed.style.background = 'radial-gradient(#fff, #e94f37)';
     } else {
         intuitionButton.value = 'not-playing';
         let intuitionVid = document.getElementById('intuition');
@@ -133,8 +138,12 @@ function playIntuition(event) {
         intuitionButton.style.boxShadow = '3px 3px 3px #000';
         let palC2Text = document.getElementById('vid-credit');
         palC2Text.innerHTML = 'Maybe this will help...';
+        drPalLed.style.background = 'radial-gradient(rgb(177, 74, 74), #e94f37)';
     }
 }
 //----------Event listener for 'intuition' button click---------
 var intuitionButton = document.getElementById('int-aw');
 intuitionButton.addEventListener('click', playIntuition);
+
+// --------Dr P.A.L. led (to illuminate when videos play)-------
+var drPalLed = document.getElementById('led');
