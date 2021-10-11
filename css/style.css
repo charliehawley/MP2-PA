@@ -1,3 +1,4 @@
+/* Adobe Fonts */
 @import url("https://use.typekit.net/odw1cig.css");
 
 * {
@@ -44,7 +45,6 @@ header>p {
 /*------------Console 1-------------*/
 #console-1 {
     margin: auto;
-    /* padding-top: 10px; */
     text-align: center;
     width: 300px;
     height: 600px;
@@ -395,6 +395,7 @@ footer {
     }
 
     h2 {
+        padding-top: 30px;
         font-size: 1.5rem;
     }
 
@@ -434,6 +435,11 @@ footer {
         height: 150px;
         width: 150px;
         border: 40px #666 inset;
+    }
+
+    #pal-active {  
+        width: 150px;
+        height: 150px;
     }
 
     #glint {

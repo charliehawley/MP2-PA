@@ -1,17 +1,18 @@
 //----------------MODULE 1 PAL user response function-----------------
+
 function palRespond(event) {
     event.preventDefault();
     let userInput = document.getElementById('user-activity').value.toLowerCase();
     console.log(userInput);
 
     //--------Response syntax modifier--------
-    userInput = userInput.replace(/my/g, 'your');
-    userInput = userInput.replace(/me/g, 'you');
-    userInput = userInput.replace(/ing/g, '');
+    userInput = userInput.replace(/ my /g, ' your ');
+    userInput = userInput.replace(/ me /g, ' you ');
+    userInput = userInput.replace(/ing /g, ' ');
 
     //---Empty submission response generator---
     if (userInput === '') {
-        var responseString = 'Do you really have no ambition? <br>Type something in.';
+        var responseString = 'Do you really have no ambitions? <br>Type something in.';
     } else {
         //--------Random response array--------
         let randomResponseArr = [
@@ -29,7 +30,7 @@ function palRespond(event) {
         //--------Random index generator--------
         let x = Math.floor(Math.random() * 10);
         console.log(x);
-        var responseString = randomResponseArr[x];
+        responseString = randomResponseArr[x];
     }
     //------Assign response string to HTML------
     let palResponse = document.getElementById('pal-response');
@@ -38,23 +39,28 @@ function palRespond(event) {
 //--------Event listener (submit)--------
 let userSubmit = document.getElementById('user-input');
 userSubmit.addEventListener('submit', palRespond);
+userSubmit.addEventListener('submit', palActivate)
+
+//---------P.A.L.s eye activate----------
+function palActivate(event) {
+    let palActive = document.getElementById('pal-active');  
+    palActive.style.display = 'block';
+    setTimeout(function(){palActive.style.display = 'none'}, 2000);
+}
 
 //------Submit button depress and raise and P.A.L. eye light-----
 var submitButton = document.getElementById('submit');
 submitButton.addEventListener('mousedown', depress);
 submitButton.addEventListener('mouseup', raise);
-var palActive = document.getElementById('pal-active');
 
 function depress(event) {
     console.log('depressed!');
     submitButton.style.boxShadow = '-3px -3px 3px #000';
-    palActive.style.display = 'block';
 }
 
 function raise(event) {
     console.log('raised!')
     submitButton.style.boxShadow = '3px 3px 3px #000';
-    palActive.style.display = 'none';
 }
 
 
@@ -62,7 +68,9 @@ function raise(event) {
 -------------------Reveals 'exist' video and plays----------------*/
 function playWlex(event) {
     var currentWlexValue = wlexButton.value;
-    if (currentWlexValue === 'not-playing' && luckButton.value !== 'playing' && intuitionButton.value !== 'playing') {
+    if (currentWlexValue === 'not-playing' 
+        && luckButton.value !== 'playing' 
+        && intuitionButton.value !== 'playing') {
         console.log('clicked wl-ex');
         wlexButton.value = 'playing';
         let wlexVid = document.getElementById('wl-ex');
@@ -80,7 +88,8 @@ function playWlex(event) {
         wlexButton.style.boxShadow = '3px 3px 3px #000';
         let palC2Text = document.getElementById('vid-credit');
         palC2Text.innerHTML = 'Maybe this will help...';
-        drPalLed.style.background = 'radial-gradient(rgb(177, 74, 74), #e94f37)';
+        drPalLed.style.background = 
+        'radial-gradient(rgb(177, 74, 74), #e94f37)';
     }
 }
 
@@ -91,7 +100,9 @@ wlexButton.addEventListener('click', playWlex);
 //-------------------Reveals 'luck' video and plays---------------- 
 function playLuck(event) {
     var currentLuckValue = luckButton.value;
-    if (currentLuckValue === 'not-playing' && wlexButton.value !== 'playing' && intuitionButton.value !== 'playing') {
+    if (currentLuckValue === 'not-playing' 
+        && wlexButton.value !== 'playing' 
+        && intuitionButton.value !== 'playing') {
         console.log('clicked luck');
         luckButton.value = 'playing';
         let luckVid = document.getElementById('luck');
@@ -110,7 +121,8 @@ function playLuck(event) {
         luckButton.style.boxShadow = '3px 3px 3px #000';
         let palC2Text = document.getElementById('vid-credit');
         palC2Text.innerHTML = 'Maybe this will help...';
-        drPalLed.style.background = 'radial-gradient(rgb(177, 74, 74), #e94f37)';
+        drPalLed.style.background = 
+        'radial-gradient(rgb(177, 74, 74), #e94f37)';
     }
 }
 
@@ -121,7 +133,9 @@ luckButton.addEventListener('click', playLuck);
 //---------------Reveals 'intuition' video and plays-------------- 
 function playIntuition(event) {
     var currentIntValue = intuitionButton.value;
-    if (currentIntValue === 'not-playing' && wlexButton.value !== 'playing' && luckButton.value !== 'playing') {
+    if (currentIntValue === 'not-playing' 
+        && wlexButton.value !== 'playing' 
+        && luckButton.value !== 'playing') {
         console.log('clicked intuition');
         intuitionButton.value = 'playing';
         let intuitionVid = document.getElementById('intuition');
@@ -140,7 +154,8 @@ function playIntuition(event) {
         intuitionButton.style.boxShadow = '3px 3px 3px #000';
         let palC2Text = document.getElementById('vid-credit');
         palC2Text.innerHTML = 'Maybe this will help...';
-        drPalLed.style.background = 'radial-gradient(rgb(177, 74, 74), #e94f37)';
+        drPalLed.style.background = 
+        'radial-gradient(rgb(177, 74, 74), #e94f37)';
     }
 }
 
