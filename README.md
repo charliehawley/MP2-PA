@@ -15,14 +15,18 @@ P.A.L. is the first and only element you can interact with on the site. He will 
 ## Skeleton
 P.A.L. will appear centrally on the homepage but there will be a resources page and about section on the site to explain the philosophy of P.A.L. and also a disclaimer recommending against using P.A.L. for serious personal use.
 
+## Wireframes
+![wireframe image](assets/images/wireframe.png)
+*N.B. pdf available in: /assets/images*
+
 ## Bugs
 * Module 1 'What are you thinking of doing?'
     * Although the text input field is prepopulated with 'I'm trying to...' (in order to force the syntax of the user input) if the user inserts a present participle verb (havING, chargING) where the verb would usually end in 'e', P.A.L. won't append the 'e'. The output for these two examples is therefore 'hav' and 'charg' respectively.
-    * The longer the string, the more opportunity there is for the syntax to break the function: 
+    * The longer the string, the more opportunity there is for the conjugation to break the function: 
     
-    ![image of confusing output](/assets/images/long-strings.jpg)
+    ![image of confusing output](assets/images/long-strings.jpg)
 
-    * IOS device clicks don't trigger the P.A.L. lamp on/off
+    * ~~IOS device clicks don't trigger the P.A.L. lamp on/off~~ SOLVED: changed lamp trigger to 'submit' event instead of 'mousedown'/'mouseup' events.
 
 * Module 2 'Dr P.A.L.'
     * Playing a video shows the credit for that video in the vid-credit panel however clicking on a video button whilst another video is playing replaced the credit with the placeholder text and continues to play the original video.
