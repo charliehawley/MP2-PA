@@ -121,6 +121,16 @@ h2 {
                         20px 20px #666);
 }
 
+#pal-active {
+    display: none;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(rgba(255, 56, 20, 0.8), rgba(0, 0, 0, 0));
+    filter: drop-shadow(20px 20px #666,
+                        20px 20px #666);
+}
+
 #glint {
     position: absolute;
     width: 10px;
@@ -150,7 +160,6 @@ h2 {
 #console-2 {
     margin: auto;
     margin-top: 10px;
-    /* padding-top: 10px; */
     width: 300px;
     height: 950px;
     background: linear-gradient(to top, silver 0%, rgb(87, 87, 87) 100%);
@@ -236,6 +245,19 @@ video {
     background-size: cover;
     border: 5px #fff inset; 
     border-radius: 50%;
+}
+
+#led {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: radial-gradient(rgb(151, 89, 89), #e94f37);
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+    border: 2px inset #ddd;
+    /* box-shadow: 0px 0px 10px #000; */
 }
 
 #prescription label {

@@ -1,4 +1,4 @@
-//------------------MODULE 1 PAL user response function-------------------
+//----------------MODULE 1 PAL user response function-----------------
 function palRespond(event) {
     event.preventDefault();
     let userInput = document.getElementById('user-activity').value.toLowerCase();
@@ -6,6 +6,7 @@ function palRespond(event) {
 
     //--------Response syntax modifier--------
     userInput = userInput.replace(/my/g, 'your');
+    userInput = userInput.replace(/me/g, 'you');
     userInput = userInput.replace(/ing/g, '');
 
     //---Empty submission response generator---
@@ -38,24 +39,27 @@ function palRespond(event) {
 let userSubmit = document.getElementById('user-input');
 userSubmit.addEventListener('submit', palRespond);
 
-//------Submit button depress on/off-----
+//------Submit button depress on/off for click-----
 var submitButton = document.getElementById('submit');
 submitButton.addEventListener('mousedown', depress);
 submitButton.addEventListener('mouseup', raise);
+var palActive = document.getElementById('pal-active');
 
 function depress(event) {
     console.log('depressed!');
     submitButton.style.boxShadow = '-3px -3px 3px #000';
+    palActive.style.display = 'block';
 }
 
 function raise(event) {
     console.log('raised!')
     submitButton.style.boxShadow = '3px 3px 3px #000';
+    palActive.style.display = 'none';
 }
 
 
 /*----------------MODULE 2 PAL video reveal and play---------------
--------------------Reveals 'exist' video and plays-------------------*/
+-------------------Reveals 'exist' video and plays----------------*/
 function playWlex(event) {
     var currentWlexValue = wlexButton.value;
     if (currentWlexValue === 'not-playing' && luckButton.value !== 'playing' && intuitionButton.value !== 'playing') {
@@ -77,11 +81,11 @@ function playWlex(event) {
         palC2Text.innerHTML = 'Maybe this will help...';
     }
 }
-//----------------Event listener for 'exist' button click--------------*/ 
+//--------------Event listener for 'exist' button click------------ 
 var wlexButton = document.getElementById('exist');
 wlexButton.addEventListener('click', playWlex);
 
-//-------------------Reveals 'luck' video and plays------------------- 
+//-------------------Reveals 'luck' video and plays---------------- 
 function playLuck(event) {
     var currentLuckValue = luckButton.value;
     if (currentLuckValue === 'not-playing' && wlexButton.value !== 'playing' && intuitionButton.value !== 'playing') {
@@ -104,11 +108,11 @@ function playLuck(event) {
         palC2Text.innerHTML = 'Maybe this will help...';
     }
 }
-//----------------Event listener for 'luck' button click-------------- 
+//--------------Event listener for 'luck' button click------------ 
 var luckButton = document.getElementById('luck-sol');
 luckButton.addEventListener('click', playLuck);
 
-//-------------------Reveals 'intuition' video and plays------------------- 
+//---------------Reveals 'intuition' video and plays-------------- 
 function playIntuition(event) {
     var currentIntValue = intuitionButton.value;
     if (currentIntValue === 'not-playing' && wlexButton.value !== 'playing' && luckButton.value !== 'playing') {
@@ -131,6 +135,6 @@ function playIntuition(event) {
         palC2Text.innerHTML = 'Maybe this will help...';
     }
 }
-//----------------Event listener for 'intuition' button click--------------
+//----------Event listener for 'intuition' button click---------
 var intuitionButton = document.getElementById('int-aw');
 intuitionButton.addEventListener('click', playIntuition);
