@@ -45,7 +45,7 @@ userSubmit.addEventListener('submit', palActivate)
 function palActivate(event) {
     let palActive = document.getElementById('pal-active');  
     palActive.style.display = 'block';
-    setTimeout(function(){palActive.style.display = 'none'}, 2000);
+    setTimeout(function(){palActive.style.display = 'none'}, 500);
 }
 
 //------Submit button depress and raise and P.A.L. eye light-----
