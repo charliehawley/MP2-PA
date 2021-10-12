@@ -54,6 +54,7 @@ header>p {
     border: 5px #fff outset;
 }
 
+/*---User input console---*/
 .user-port {
     margin: 2% auto;
     background-color: #2b2c28;
@@ -94,6 +95,7 @@ h2 {
     box-shadow: 3px 3px 3px #000;
 }
 
+/*---Pal response console---*/
 #pal-console {
     margin: 10px auto 30px;
     width: 90%;
@@ -109,7 +111,7 @@ h2 {
 #pal-response {
     padding: 5px;
 }
-
+/*---Indicator Lamp---*/
 #pals-eye {
     position: relative;
     margin: 25px auto;
@@ -182,6 +184,7 @@ hr {
     border: 3px #d8dbe2 outset;
 }
 
+/*---Malady selection buttons---*/
 .user-port p {
     font-size: 1rem;
     padding: 10px 22px;
@@ -205,6 +208,7 @@ hr {
     box-shadow: 3px 3px 3px #000;
 }
 
+/*---Video player console---*/
 #dr-pal-console {
     margin: 10px auto 0;
     width: 90%;
@@ -246,6 +250,7 @@ video {
     padding-left: 4px;
 }
 
+/*---P.A.L. speaker---*/
 #pal-prescription-speaker {
     margin: 0px auto 50px;
     width: 150px;
@@ -448,7 +453,7 @@ footer {
     #submit {
         font-size: 1rem;
     }
-
+    /*---Response console---*/
     #pal-console{
         width: 450px;
         height: 250px;
@@ -462,6 +467,7 @@ footer {
         margin: auto;
     }
 
+    /*---Indicator Lamp---*/
     #pals-eye{
         position: absolute;
         right: 10%;
@@ -540,7 +546,7 @@ footer {
         height: 230px;
         width: 230px;
     }
-
+    /*-------------------------Footer----------------------------*/
     footer {
         position: absolute;
         width: 87%;
