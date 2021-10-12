@@ -29,12 +29,12 @@ I want P.A.L. to displace the user's nihilism so that P.A.L. can help them to fo
 
 ## Demo
 
-Deployed here - https://charliehawley.github.io/MP2-PA/
+Deployed here - https://charliehawley.github.io/MP2-PA/ <br>
 Repository here - https://github.com/charliehawley/MP2-PA
 
 ### Wireframe
-![wireframe image](assets/images/wireframe.png)
-*N.B. pdf available in: /assets/images*
+![wireframe image](/wireframe.png)
+*N.B. pdf available in /root
 
 ### Responsive Demo
 
@@ -78,7 +78,7 @@ P.A.L.s two modules appears centrally on the homepage.
 On large displays, the user interfaces appear to the left, whilst the outputs are central, with function indicators on the right.
 On smaller displays the modules prioritise user input above the outputs with the indicators beneath.
 <br><br>
-An about section explains the philosophy of P.A.L. and there is also a disclaimer recommending against using P.A.L. for serious decisions. These appear beneath the main body to avoid interfering with the tone and narrative that has been arranged to lead the user from one module to the next.
+On the iPad, an about section explains the philosophy of P.A.L. and there is also a disclaimer on all displays recommending against using P.A.L. for serious decisions. This appears beneath the main body to avoid interfering with the tone and narrative that has been arranged to lead the user from one module to the next.
 
 ## Surface
 P.A.L. bears striking resemblance to the malicious entity from Stanley Kubrick's masterpiece *2001: A Space Odyssey* but has been rebranded to suggest a more congenial character. <br><br>
@@ -103,7 +103,10 @@ HTML validated using W3C Markup Validation Service and returns no errors.<br>
 
 CSS validated using W3C CSS Validation Service and returns no errors.<br>
 
-JS hint - returned 'responseString' used out of scope however when variable was redeclared 'responseString' returned 'undefined' so both instances (line 30, line 34) were left unchanged.
+JS hint - returned 'responseString' used out of scope however when variable was redeclared 'responseString' returned 'undefined' so both instances (line 30, line 34) were left unchanged.<br>
+
+The site is fully responsive and media queries were used to adapt the site to displays from iPhone 5/SE up to 1920 x 1080 screens.
+![responsive design](/am-i-responsive.jpg)
 
 ## Deployment
 The site was created using a versioning system integrated with GitHub via Gitpod.
@@ -117,7 +120,7 @@ You can run this respository locally by running git clone https://github.com/cha
     * Although the text input field is prepopulated with 'I'm trying to...' (in order to force the syntax of the user input) if the user inserts a present participle verb (havING, chargING) where the verb would usually end in 'e', P.A.L. won't append the 'e'. The output for these two examples is therefore 'hav' and 'charg' respectively.
     * The longer the string, the more opportunity there is for the conjugation to break the function: 
     
-    ![image of confusing output](assets/images/long-strings.jpg)
+    ![image of confusing output](/long-strings.jpg)
 
     * ~~IOS device clicks don't trigger the P.A.L. lamp on/off~~ SOLVED: changed lamp trigger to 'submit' event instead of 'mousedown'/'mouseup' events.
 
@@ -127,6 +130,7 @@ You can run this respository locally by running git clone https://github.com/cha
 ## Out of scope/future features
 * full screen video from Module 2
 * log and filter responses from Module 1 so that you don't recieve the same result twice
+---
 
 ## Credits
 * Adobe fonts - OCR-A Std, Lo-Res 21 Serif

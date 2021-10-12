@@ -1,4 +1,9 @@
 //----------------MODULE 1 PAL user response function-----------------
+/**
+ * Generates randomised response with user input and template literal
+ * @param {string} event - A string param
+ * @returns {string} - A new string with user input
+ */
 function palRespond(event) {
     event.preventDefault();
     let userInput = document.getElementById('user-activity').value.toLowerCase();
@@ -39,28 +44,26 @@ userSubmit.addEventListener('submit', palRespond);
 userSubmit.addEventListener('submit', palActivate);
 
 //---------P.A.L.s eye activate----------
+/**
+ * Illuminates P.A.L. lamp on submit
+ * @param {} event - user submit
+ * @returns {void} - lamp illuminates for .8s
+ */
 function palActivate(event) {
     let palActive = document.getElementById('pal-active');  
     palActive.style.display = 'block';
     setTimeout(function(){palActive.style.display = 'none';}, 800);
 }
 
-//------Submit button depress and raise and P.A.L. eye light-----
-var submitButton = document.getElementById('submit');
-submitButton.addEventListener('mousedown', depress);
-submitButton.addEventListener('mouseup', raise);
-
-function depress(event) {
-    submitButton.style.boxShadow = '-3px -3px 3px #000';
-}
-
-function raise(event) {
-    submitButton.style.boxShadow = '3px 3px 3px #000';
-}
-
-
 /*----------------MODULE 2 PAL video reveal and play---------------
 -------------------Reveals 'exist' video and plays----------------*/
+/**
+ * Displays wlex video when appropriate button is clicked
+ * pauses and hides video if playing
+ * @param {} event - user clicks
+ * @param {button value} - reads value of button (playing/paused)
+ * @returns {void} - video plays/video hides and pauses
+ */
 function playWlex(event) {
     var currentWlexValue = wlexButton.value;
     if (currentWlexValue === 'not-playing' && 
@@ -92,6 +95,13 @@ var wlexButton = document.getElementById('exist');
 wlexButton.addEventListener('click', playWlex);
 
 //-------------------Reveals 'luck' video and plays---------------- 
+/**
+ * Displays luck video when appropriate button is clicked
+ * pauses and hides video if playing
+ * @param {} event - user clicks
+ * @param {button value} - reads value of button (playing/paused)
+ * @returns {void} - video plays/video hides and pauses
+ */
 function playLuck(event) {
     var currentLuckValue = luckButton.value;
     if (currentLuckValue === 'not-playing' && 
@@ -124,6 +134,13 @@ var luckButton = document.getElementById('luck-sol');
 luckButton.addEventListener('click', playLuck);
 
 //---------------Reveals 'intuition' video and plays-------------- 
+/**
+ * Displays intuition video when appropriate button is clicked
+ * pauses and hides video if playing
+ * @param {} event - user clicks
+ * @param {button value} - reads value of button (playing/paused)
+ * @returns {void} - video plays/video hides and pauses
+ */
 function playIntuition(event) {
     var currentIntValue = intuitionButton.value;
     if (currentIntValue === 'not-playing' && 
