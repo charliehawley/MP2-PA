@@ -276,17 +276,6 @@ video {
     border: 2px inset #ddd;
 }
 
-#prescription label {
-    margin: 10px;
-    display: inline-block;
-    background-color: #832e21;
-    color: #ffffcc;
-    padding: 10px 20px;
-    border: 8px solid #222;
-    border-radius: 3px;
-    box-shadow: 3px 3px 3px #000;
-}
-
 
 /*-----------------------------Footer-----------------------------*/
 footer {
